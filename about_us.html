@@ -13,6 +13,9 @@
   <link rel="stylesheet" href="styles.css"/>
   <script src="swiper-bundle.min.js"></script>
   <script src="main.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  
   <style>
     /* Optional glowing effect classes */
 .glow {
@@ -24,7 +27,7 @@
 
   </style>
 </head>
-<body class="bg-black text-[#fdfcf7]">
+
   <!-- ...[head remains unchanged] -->
 
 <body class="bg-black text-[#fdfcf7]">
@@ -32,14 +35,14 @@
       
       <!-- Our Story Section -->
       <section class="flex gap-4 w-full justify-between items-start max-w-[80rem] flex-col md:flex-row">
-        <div class="flex items-center" data-aos="fade-down">
+        <div class="flex items-center" data-aos="fade-up-right">
           <h1 class="font-black text-7xl bg-gradient-to-r from-[#a7cdbd] to-[#164616] text-transparent bg-clip-text">
             Our Story
           </h1>
           <ion-icon name="arrow-down-outline" class="-rotate-45 text-8xl mt-2 text-[#164616]"></ion-icon>
         </div>
   
-        <div class="w-full md:w-3/5 text-lg mt-4" data-aos="fade-up">
+        <div class="w-full md:w-3/5 text-lg mt-4" data-aos="fade-up-left" >
           <p class="font-semibold mb-4">
             Born from bunker kitchens and fueled by post-war necessity, Vault Bites is more than a food chain — it’s a resistance.
           </p>
@@ -51,7 +54,7 @@
 
 <section class="flex gap-4 mt-16 w-full justify-between items-start max-w-[80rem] flex-col md:flex-row-reverse">
   <!-- Heading and Arrow Container -->
-  <div class="flex items-center gap-4" data-aos="fade-down">
+  <div class="flex items-center gap-4" data-aos="fade-down-right" data-aos-delay="300">
     <ion-icon name="arrow-up-outline" class="rotate-[-90deg] text-8xl text-[#164616]"></ion-icon>
     <h1 class="font-black text-7xl bg-gradient-to-r from-[#a7cdbd] to-[#164616] text-transparent bg-clip-text">
       Our Mission
@@ -59,7 +62,7 @@
   </div>
 
   <!-- Text Content -->
-  <div class="w-full md:w-3/5 text-lg mt-4" data-aos="fade-up">
+  <div class="w-full md:w-3/5 text-lg mt-4" data-aos="fade-down-left" data-aos-delay="300">
     <p class="font-semibold mb-4">
      In a world where good meals are rare, we believe food should be more than just rations. Our mission is to serve hearty, handcrafted meals inspired by the Fallout universe—whether you’re a scavenger, settler, or synth
     </p>
@@ -68,7 +71,7 @@
 
 <section class="w-full px-4 py-16 bg-black text-white flex flex-col items-center md:flex-row max-w-[80rem] mx-auto gap-12 md:gap-20 mt-12">
   <!-- Left: Heading and optional visual -->
-  <div class="flex flex-col items-start md:w-2/5" data-aos="fade-right">
+  <div class="flex flex-col items-start md:w-2/5" data-aos="flip-up" data-aos-delay="500">
     <div class="flex items-center gap-3">
       
       <h2 class="text-8xl font-extrabold bg-gradient-to-r from-[#a7cdbd] to-[#164616] bg-clip-text text-transparent">
@@ -81,7 +84,7 @@
   </div>
 
   <!-- Right: Story content -->
-  <div class="md:w-3/5 text-lg space-y-6" data-aos="fade-left">
+  <div class="md:w-3/5 text-lg space-y-6" data-aos="flip-down" data-aos-delay="500">
     <p>
       Vault Bites was born not in kitchens of luxury, but in the shadows of fallout bunkers. In 2287, when the skies darkened and the earth cracked, hope was scarce — but hunger wasn’t.
     </p>
@@ -96,10 +99,10 @@
 
       <!-- Team Section -->
      <section class="bg-black -mx-12 px-12 py-16 flex flex-col items-center rounded-lg text-[#fdfcf7] mb-12">
-  <h1 class="text-8xl font-extrabold bg-gradient-to-r from-[#a7cdbd] to-[#164616] bg-clip-text text-transparent mb-12">
+  <h1 class="text-8xl font-extrabold bg-gradient-to-r from-[#a7cdbd] to-[#164616] bg-clip-text text-transparent mb-12" data-aos="fade-left" data-aos-delay="200">
     Meet our Core
   </h1>
-  <div class="flex flex-wrap gap-8 justify-around">
+  <div class="flex flex-wrap gap-8 justify-around" data-aos="zoom-in-up" data-aos-delay="200">
     <!-- Card Template Start -->
     <!-- Warden Flint -->
     <div class="h-[420px] w-[300px] bg-[#24485c] rounded-lg flex flex-col items-center p-6">
@@ -198,26 +201,28 @@
   
       <!-- Stats Section -->
       <section class="flex flex-col gap-24 items-center max-w-[80rem] mb-32 text-[#fdfcf7]">
-        <h1 class="font-black text-7xl bg-gradient-to-r from-[#a7cdbd] to-[#164616] text-transparent bg-clip-text">
+        <h1 class="font-black text-7xl bg-gradient-to-r from-[#a7cdbd] to-[#164616] text-transparent bg-clip-text" data-aos="fade-down-right" data-aos-duration="300">
       Our Acheivements
     </h1> 
-        <div class="flex flex-col md:flex-row gap-8 pt-24 justify-between border-solid border-t-8 border-[#a7cdbd] rounded-lg items-center" data-aos="fade-up">
+        <div class="flex flex-col md:flex-row gap-8 pt-24 justify-between border-solid border-t-8 border-[#a7cdbd] rounded-lg items-center" data-aos="fade-down-left" data-aos-duration="300">
           <h1 class="font-extrabold text-7xl text-[#a7cdbd]">300+</h1>
           <p class="w-3/5">Over 300 underground outposts now serve warm, irradiated-safe meals in former fallout shelters and Metro tunnels.</p>
         </div>
   
-        <div class="flex flex-col md:flex-row gap-8 pt-24 justify-between border-solid border-t-8 border-[#a7cdbd] rounded-lg items-center" data-aos="fade-up" data-aos-delay="100">
+        <div class="flex flex-col md:flex-row gap-8 pt-24 justify-between border-solid border-t-8 border-[#a7cdbd] rounded-lg items-center" data-aos="fade-down-right" data-aos-duration="300" >
           <h1 class="font-extrabold text-7xl text-[#a7cdbd]">5,000+</h1>
           <p class="w-3/5">More than 5,000 survivors nourished daily with protein-packed, waste-free delicacies crafted from pre-war remains.</p>
         </div>
   
-        <div class="flex flex-col md:flex-row gap-8 pt-24 justify-between border-solid border-t-8 border-[#a7cdbd] rounded-lg items-center" data-aos="fade-up" data-aos-delay="200">
+        <div class="flex flex-col md:flex-row gap-8 pt-24 justify-between border-solid border-t-8 border-[#a7cdbd] rounded-lg items-center" data-aos="fade-down-left" data-aos-duration="300">
           <h1 class="font-extrabold text-7xl text-[#a7cdbd]">8M+</h1>
           <p class="w-3/5">Over 8 million rations distributed in irradiated zones — each one a bite of hope, a taste of tomorrow.</p>
         </div>
       </section>
     </main>
-  </body>
+    <script>
+      AOS.init();
+    </script>
   
 </body>
 </html>
